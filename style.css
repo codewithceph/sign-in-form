@@ -25,6 +25,10 @@ body{
     position: relative;
     width: 1300px;
 }
+img[src="preview/codewithceph_nametag.png"]:hover{
+    transform: scale(1.05);
+    transition: 03s;
+}
 .welcome{
     height: fit-content;
     margin-top: 150px;
