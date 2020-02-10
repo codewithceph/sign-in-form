@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico|Lacquer|Oswald|Roboto:300&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1></h1>
+            <h3>have fun with our collection of books</h3>
+            <div class="download">
+                <img src="img/google-play.png" alt="download">
+                <img src="img/app-store.png" alt="download">
+                <img src="img/window.png" alt="download">
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="icon">
+                <img src="img/icon-2.png" alt="">
+                <p>Good readers</p>
+            </div>
+            <form action="?" method="post" autocomplete="off">
+                <div class="user-name">
+                    <p>Username</p>
+                    <input type="text" name="username" placeholder="John Doe" maxlength="30" minlength="3">
+                </div>
+                <div class="password">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="&ast;&ast;&ast;&ast;&ast;&ast;&ast;&ast;&ast;" minlength="6" maxlength="16">
+                </div>
+                <div class="captcha">
+                    <p>Captcha</p>
+                    <input type="text" name="captcha" placeholder="Enter what you see on the captcha">
+                    <div class="captcha-code"></div>
+                </div>
+                <div class="login">
+                    <input type="submit" name="login" value="Login">
+                </div>
+            </form>
+            <div class="new">
+                <p class="forgot-password">Forgot password</p>
+                <p class="create-account">Create an account</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

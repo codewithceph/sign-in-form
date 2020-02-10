@@ -1,0 +1,149 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/bg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    transition: 0.5s;
+
+}
+.container{
+    margin:70px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: auto;
+    position: relative;
+    width: 1300px;
+}
+.welcome{
+    height: fit-content;
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 28px;
+    color: red;
+    font-family:'Oswald',Roboto, cursive;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.welcome h3{
+    font-family: 'Pacifico', cursive;
+    color: #fdcb6e;
+    font-weight: lighter;
+    text-align: center;
+    width: fit-content;
+    opacity: 0;
+    transform: translateY(-110%);
+    transition: 1s;
+}
+.download{
+    margin-left: 50px;
+    height: 0;
+    overflow-y: hidden;
+    transition: 1.5s;
+}
+.download img{
+    margin:40px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.download img:hover{
+    transform: scale(1.05);
+}
+.form-container{
+    width: 320px;
+    height: 500px;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.icon{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+.icon img{
+    width: 60px;
+    height: 40px;
+}
+form{
+    margin-top: 35px;
+}
+form > div{
+    margin-top: 20px;
+}
+div > input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    outline: none;
+    color: #eee;
+    font-size: 14px;
+    font-family:'Roboto', Pacifico, cursive;
+}
+form > div > p{
+    text-align: left;
+    margin-left: 30px;
+    padding: 5px;
+    color: red;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.captcha-code{
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(238, 238, 238, 0.486);
+    margin: 20px auto 0 auto;
+    font-family: 'Lacquer', Pacifico, cursive;
+    font-size: 30px;
+}
+.login input{
+    border: solid 1px #000;
+    background-color: #000;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Pacifico', cursive;
+}
+.login input:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.new{
+    margin: 20px auto 0 auto ;
+    color: #fdcb6e80;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+}
+.new p{
+    padding: 5px;
+}
+.new p:hover{
+    color: #fdcb6e;
+    transition: 0.3s;
+}
